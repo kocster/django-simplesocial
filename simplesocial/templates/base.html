@@ -20,6 +20,7 @@
     <!-- Master css -->
     <link rel="stylesheet" href="{% static 'simplesocial/css/master.css' %}">
 
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 
   </head>
   <body>
@@ -32,11 +33,11 @@
           <li> <a href="#">Post</a> </li>
           <li> <a href="#">Groups</a> </li>
           <li><a href="#">Create Group</a> </li>
-          <li><a href="{% url 'accounts:logout' %}}">Log Out</a> </li>
+          <li><a href="{% url 'accounts:logout' %}}">Log Out</a></li>
           {% else %}
           <li><a href="#">Groups</a> </li>
           <li><a href="{% url 'accounts:login' %}">Log In</a> </li>
-          <li><a href="{% url 'accounts:signup' %}">Sıgn Up</a> </li>
+          <li><a href="{% url 'accounts:signup' %}">Sign Up</a> </li>
           {% endif %}
         </ul>
 
