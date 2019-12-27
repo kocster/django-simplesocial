@@ -8,11 +8,11 @@
     {% if user in group.members.all %}
         <a href="{% url 'groups:leave' slug=group.slug %}"
         class="btn btn-lg btn-fill btn-warning">
-            <span class="iconify" data-icon="openmoji:emergency-exit" data-inline="false">  Leave</span></a>
+            <span class="iconify" data-icon="openmoji:emergency-exit" data-inline="false"></span> Leave</a>
     {% else %}
-        <a href="{% url 'groups:join' slug=group.slug %}"
+          <a href="{% url 'groups:join' slug=group.slug %}"
         class="btn btn-lg btn-fill btn-info">
-        <span class="iconify" data-icon="dashicons:welcome-write-blog" data-inline="false"> Join</span></a>
+        <span class="iconify" data-icon="dashicons:welcome-write-blog" data-inline="false"></span> Join</a>
     {% endif %}
 
 </div>
